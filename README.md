@@ -42,8 +42,8 @@ More details will be presented when details are worked out.
 
 ### Requirements
 
-> [GriefPrevention 7.8](http://dev.bukkit.org/bukkit-plugins/grief-prevention/)
-> [Craftbukkit 1.6.4 R0.1](http://dl.bukkit.org/)
+- [GriefPrevention 7.8](http://dev.bukkit.org/bukkit-plugins/grief-prevention/)
+- [Craftbukkit 1.6.4 R0.1](http://dl.bukkit.org/)
 
 Spigot may work.
 Need volunteers to confirm.

@@ -1,0 +1,5 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+author: Patrick Bollinger & Judy Hochadel
+main: com.pjbollinger.guilds.Guilds

@@ -1,5 +1,5 @@
-name: ${project.name}
-version: ${project.version}
-description: ${project.description}
+name: Guilds-GriefPrevention
+version: 1.0-SNAPSHOT
+description: Short Description
 author: Patrick Bollinger & Judy Hochadel
 main: com.pjbollinger.guilds.Guilds

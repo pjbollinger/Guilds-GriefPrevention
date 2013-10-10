@@ -32,6 +32,8 @@ This is the hierarchy of how guilds will be structured, with their expected powe
     - Add/Remove Members
     - Subdivide land for Members
 - Guild Members
+    - Build in public and designated areas
+    - Access chests in public and designated areas
 
 ### Alliances
 

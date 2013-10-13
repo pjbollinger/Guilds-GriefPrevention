@@ -3,3 +3,8 @@ version: 1.0-SNAPSHOT
 description: Short Description
 author: Patrick Bollinger & Judy Hochadel
 main: com.pjbollinger.guilds.Guilds
+commands:
+    Judy:
+        description: test command
+        usage: /<command>
+

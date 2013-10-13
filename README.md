@@ -52,7 +52,7 @@ Need volunteers to confirm.
 
 ### How to install
 
-1. Download the plugin from [PUT LINK HERE]()
+1. Download the plugin from [Our Jenkins Server](http://ci.pjbollinger.com/)
 2. Move the plugin to the ```plugins``` folder on your craftbukkit server
 3. Ensure all requirements have been met.
 4. Run your server.

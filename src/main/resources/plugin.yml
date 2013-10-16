@@ -7,4 +7,6 @@ commands:
     Judy:
         description: test command
         usage: /<command>
-
+    gs:
+        description: test command
+        usage: /<command>

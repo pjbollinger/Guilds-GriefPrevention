@@ -79,7 +79,7 @@ public class Guilds extends JavaPlugin {
                 //Stuff for inviting another Guild to be allied with yours
                 //Need to specify <name>
             }
-            else if(args[0].eqaulsIgnoreCase("neutral")){
+            else if(args[0].equalsIgnoreCase("neutral")){
                 //Stuff for returning to neutral with a Guild
                 //Need to specify <name>
             }

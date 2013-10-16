@@ -21,7 +21,7 @@ public class Guilds extends JavaPlugin {
             getLogger().info("Judy says, 'Hi!'");
             return true;
         }
-        else if(cmd.getName().equalsIgnoreCase("g")){
+        else if(cmd.getName().equalsIgnoreCase("gs")){
             if(args[0].equalsIgnoreCase("create")){
                 //Stuff for creating a faction will go here
                 //Need to specify <name of Guild>

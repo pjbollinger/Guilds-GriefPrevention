@@ -21,6 +21,14 @@ public class Guilds extends JavaPlugin {
             getLogger().info("Judy says, 'Hi!'");
             return true;
         }
+        else if(cmd.getName().equalsIgnoreCase("g")){
+            if(args[0].equalsIgnoreCase("create")){
+                //Stuff for creating a faction will go here
+            }
+            else if(args[0].equalsIgnoreCase("invite")){
+                //Stuff for inviting a player will go here
+            }
+        }
         return false;
     }
 }

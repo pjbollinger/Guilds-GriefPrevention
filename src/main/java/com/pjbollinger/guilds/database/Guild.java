@@ -41,4 +41,55 @@ public class Guild {
         this.moderators.add(moderator);
     }
 
+    public void removeModerator(String moderator) {
+        this.moderators.remove(moderator);
+    }
+
+    public List<String> getMembers() {
+        return members;
+    }
+
+    public void setMembers(List<String> members) {
+        this.members = members;
+    }
+
+    public void addMember(String member) {
+        this.members.add(member);
+    }
+
+    public void removeMember(String member) {
+        this.members.remove(member);
+    }
+
+    public int getPool() {
+        return pool;
+    }
+
+    public void setPool(int pool) {
+        this.pool = pool;
+    }
+
+    public int getClaimed() {
+        return claimed;
+    }
+
+    public void setClaimed(int claimed) {
+        this.claimed = claimed;
+    }
+
+    public int[] getClaims() {
+        return claims;
+    }
+
+    public void setClaims(int[] claims) {
+        this.claims = claims;
+    }
+
+    public List<Guild> getAlliances() {
+        return alliances;
+    }
+
+    public void setAlliances(List<Guild> alliances) {
+        this.alliances = alliances;
+    }
 }

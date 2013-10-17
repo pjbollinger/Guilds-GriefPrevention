@@ -25,7 +25,12 @@ public class Guilds extends JavaPlugin {
             if(args[0].equalsIgnoreCase("create")){
                 //Stuff for creating a faction will go here
                 //Need to specify <name of Guild>
-                getLogger().info("You want to make a Guild with the name: " + args[1]);
+                if(args.length == 2){
+                    getLogger().info("You want to make a Guild with the name: " + args[1]);
+                }
+                else {
+                    getLogger().warning("Command format is /gs create <name of Guild>");
+                }
             }
             else if(args[0].equalsIgnoreCase("invite")){
                 //Stuff for inviting a player will go here

@@ -11,7 +11,7 @@ public class Guild {
     private List<Guild> alliances;
     private int pool;
     private int claimed;
-    private int[] claims;
+    private List<Integer> claims;
 
     public String getName() {
         return this.name;
@@ -77,12 +77,16 @@ public class Guild {
         this.claimed = claimed;
     }
 
-    public int[] getClaims() {
+    public List<Integer> getClaims() {
         return claims;
     }
 
-    public void setClaims(int[] claims) {
+    public void setClaims(List<Integer> claims) {
         this.claims = claims;
+    }
+
+    public void addClaim(int claim) {
+        this.claims.add(claim);
     }
 
     public List<Guild> getAlliances() {

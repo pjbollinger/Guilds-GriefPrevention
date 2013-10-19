@@ -44,6 +44,13 @@ public class Guilds extends JavaPlugin {
             }
             else if(args[0].equalsIgnoreCase("invitations")){
                 //Stuff for viewing which Guild(s) have invited a player to join will go here
+                if(args.length == 2){
+                    getLogger().info("You want to display page: " + args[1]);
+                }
+                else {
+                    getLogger().info("You want to display the first page.");
+                }
+
             }
             else if(args[0].equalsIgnoreCase("join")){
                 //Stuff for if invited OR if desire to join an OPEN Guild
@@ -58,6 +65,7 @@ public class Guilds extends JavaPlugin {
 
             else if(args[0].equalsIgnoreCase("leave")){
                 //Stuff for leaving the Guild
+                getLogger().info("You want to leave this Guild.");
             }
             else if(args[0].equalsIgnoreCase("kick")){
                 //Stuff for getting rid of a troublemaker
@@ -99,26 +107,50 @@ public class Guilds extends JavaPlugin {
                 else {
                     getLogger().warning("Command format is /gs leader <name>");
                 }
-
             }
             else if(args[0].equalsIgnoreCase("list")){
                 //Stuff for creating/showing list of Guilds
                 //page # is optional
+                if (args.length == 2){
+                    getLogger().info("You want to display page: " + args[1]);
+                }
+                else {
+                    getLogger().info("You want to display the first page.");
+                }
             }
             else if(args[0].equalsIgnoreCase("show")){
                 //Stuff for showing info about a Guild
+                if (args.length == 2){
+                    getLogger().info("You want to display the Guild: " + args[1]);
+                }
+                else {
+                    getLogger().info("You want to display your Guild.");
+                }
             }
             else if(args[0].equalsIgnoreCase("player")){
                 //Stuff for showing info about a single person
+                if (args.length == 2){
+                    getLogger().info("You want to display info about: " + args[1]);
+                }
+                else {
+                    getLogger().info("You want to display your info.");
+                }
             }
             else if(args[0].equalsIgnoreCase("home")){
                 //Stuff for going to home set point
+                getLogger().info("You want to return home.");
             }
             else if(args[0].equalsIgnoreCase("set")){
                 //Stuff for setting the value, property, etc.
                 //examples: property = home, value = open (is Guild open or closed)
                 //examples: name = change name of Guild, description = motto for Guild
                 //Need to specify <name, property> and [value(s), description]
+                if (args.length > 1){
+                    getLogger().info("You want to set: " + args[1]);
+                }
+                else {
+                    getLogger().warning("Command format is /gs set <property> [value(s)]");
+                }
             }
             else if(args[0].equalsIgnoreCase("ally")){
                 //Stuff for inviting another Guild to be allied with yours

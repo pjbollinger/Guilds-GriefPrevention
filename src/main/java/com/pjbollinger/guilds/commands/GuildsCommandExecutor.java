@@ -183,6 +183,43 @@ public class GuildsCommandExecutor implements CommandExecutor{
                     Guild element = guildIterator.next();
                     sender.sendMessage("Guild name: " + element.getName());
                     sender.sendMessage("Leader name: " + element.getLeader());
+
+                    String moderators = "Moderators: ";
+                    Iterator<String> moderatorElementIterator = element.getModerators().iterator();
+                    while(moderatorElementIterator.hasNext()) {
+                        String subelement = moderatorElementIterator.next();
+                        moderators += subelement + ", ";
+                    }
+                    sender.sendMessage(moderators);
+
+                    String members = "Members: ";
+                    Iterator<String> memberElementIterator = element.getMembers().iterator();
+                    while(memberElementIterator.hasNext()) {
+                        String subelement = memberElementIterator.next();
+                        members += subelement + ", ";
+                    }
+                    sender.sendMessage(members);
+
+                    String alliances = "Alliances: ";
+                    Iterator<Guild> allianceElementIterator = element.getAlliances().iterator();
+                    while(allianceElementIterator.hasNext()) {
+                        String subelement = allianceElementIterator.next().getName();
+                        alliances += subelement + ", ";
+                    }
+                    sender.sendMessage(alliances);
+
+                    sender.sendMessage("This guild has a total power of: " + element.getPool());
+
+                    sender.sendMessage("This guild has claimed " + element.getClaimed() + " land");
+
+                    String claims = "Claim IDs: ";
+                    Iterator<Integer> claimElementIterator = element.getClaims().iterator();
+                    while(claimElementIterator.hasNext()) {
+                        String subelement = claimElementIterator.next().toString();
+                        members += subelement + ", ";
+                    }
+                    sender.sendMessage(claims);
+
                     sender.sendMessage("==================");
                 }
 

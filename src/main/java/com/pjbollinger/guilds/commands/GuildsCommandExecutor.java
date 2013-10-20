@@ -1,9 +1,12 @@
 package com.pjbollinger.guilds.commands;
 
 import com.pjbollinger.guilds.Guilds;
+import com.pjbollinger.guilds.database.Guild;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+
+import java.util.Iterator;
 
 public class GuildsCommandExecutor implements CommandExecutor{
 
@@ -21,6 +24,12 @@ public class GuildsCommandExecutor implements CommandExecutor{
                 //Need to specify <name of Guild>
                 if(args.length == 2){
                     sender.sendMessage("You want to make a Guild with the name: " + args[1]);
+
+                    Guild newGuild = new Guild();
+                    newGuild.setLeader(sender.getName());
+                    newGuild.setName(args[1]);
+
+                    guilds.listOfGuilds.add(newGuild);
                 }
                 else {
                     sender.sendMessage("Command format is /gs create <name of Guild>");
@@ -165,6 +174,18 @@ public class GuildsCommandExecutor implements CommandExecutor{
                 else {
                     sender.sendMessage("Command format is /gs neutral <name of Guild>");
                 }
+            }
+            else if(args[0].equalsIgnoreCase("debug")){
+                //Used for debugging purposes
+
+                Iterator<Guild> guildIterator = guilds.listOfGuilds.iterator();
+                while(guildIterator.hasNext()) {
+                    Guild element = guildIterator.next();
+                    sender.sendMessage("Guild name: " + element.getName());
+                    sender.sendMessage("Leader name: " + element.getLeader());
+                    sender.sendMessage("==================");
+                }
+
             }
             
             return true;

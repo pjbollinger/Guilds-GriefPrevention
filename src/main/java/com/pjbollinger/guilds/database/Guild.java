@@ -9,8 +9,8 @@ public class Guild {
     private List<String> moderators;
     private List<String> members;
     private List<Guild> alliances;
-    private int pool;
-    private int claimed;
+    private int pool; // Total power
+    private int claimed; // Power used to claim lands
     private List<Integer> claims;
 
     public String getName() {

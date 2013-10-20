@@ -21,6 +21,9 @@ public class Guilds extends JavaPlugin {
 
         listOfGuilds.add(RSE);
 
+        getLogger().info(RSE.getLeader());
+        getLogger().info(RSE.getName());
+
     }
 
     @Override

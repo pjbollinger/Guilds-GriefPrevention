@@ -1,5 +1,6 @@
 package com.pjbollinger.guilds.database;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Guild {
@@ -12,6 +13,17 @@ public class Guild {
     private int pool; // Total power
     private int claimed; // Power used to claim lands
     private List<Integer> claims;
+
+    public Guild() {
+        this.name = "";
+        this.leader = "";
+        this.moderators = new ArrayList<String>();
+        this.members = new ArrayList<String>();
+        this.alliances = new ArrayList<Guild>();
+        this.pool = 0;
+        this.claimed = 0;
+        this.claims = new ArrayList<Integer>();
+    }
 
     public String getName() {
         return this.name;

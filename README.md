@@ -45,7 +45,7 @@ More details will be presented when details are worked out.
 ### Requirements
 
 - [GriefPrevention 7.8](http://dev.bukkit.org/bukkit-plugins/grief-prevention/)
-- [Craftbukkit 1.6.4 R0.1](http://dl.bukkit.org/)
+- [Craftbukkit 1.7.2 R0.2](http://dl.bukkit.org/)
 
 Spigot may work.
 Need volunteers to confirm.
@@ -68,3 +68,11 @@ Need volunteers to confirm.
 ## Thanks
 
 Thank you for checking out this plugin and hope you enjoy using it and/or making it grow.
+
+## TODO
+
+1. Decide whether or not to use JSON
+2. Figure out how to save to database
+3. Figure out how to read from database
+4. Integrate into GriefPrevention
+

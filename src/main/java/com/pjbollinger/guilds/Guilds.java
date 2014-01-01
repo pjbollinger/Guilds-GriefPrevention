@@ -33,6 +33,7 @@ public class Guilds extends JavaPlugin {
                     Guilds.this.getConfig().getString("mysql.user"),
                     Guilds.this.getConfig().getString("mysql.pass")
             );
+
         } else {
             sql = new SQLite(
                     Logger.getLogger("Minecraft"),
